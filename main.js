@@ -183,10 +183,22 @@ let hoverEffect = document.querySelectorAll(".hover-effect");
 for(let i = 0; i < hoverEffect.length;i++){
     (function(index){
         hoverEffect[i].addEventListener("mouseover",function(){
-            hoverEffect[index].classList.add("animation-active");
+            hoverEffect[index].classList.add("shadow-effect-red");
         });
         hoverEffect[i].addEventListener("mouseout",function(){
-            hoverEffect[index].classList.remove("animation-active");
+            hoverEffect[index].classList.remove("shadow-effect-red");
+        })
+    })(i);
+}
+
+let hoverEffect2 = document.querySelectorAll(".hover-effect-2");
+for(let i = 0; i < hoverEffect2.length;i++){
+    (function(index){
+        hoverEffect2[i].addEventListener("mouseover",function(){
+            hoverEffect2[index].classList.add("shadow-effect-white");
+        });
+        hoverEffect2[i].addEventListener("mouseout",function(){
+            hoverEffect2[index].classList.remove("shadow-effect-white");
         })
     })(i);
 }
@@ -223,3 +235,9 @@ for(let i = 0; i < searchButton.length;i++){
         })
     })(i);
 }
+
+
+
+
+
+
