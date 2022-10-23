@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobsan | Aksiyalar</title>
+    <link rel="icon" href="../image/logo/head-icon.png">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+
+    <header>
+        <div class="mobile-header py-4 px-3 w-100 d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-flex align-items-center justify-content-start">
+                        <button class="mobile-canvas-btn" data-bs-toggle="offcanvas" data-bs-target="#sobsan-offcanvas">
+                            <div class="bars d-flex flex-column align-items-start justify-content-evenly">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-10 d-flex align-items-center justify-content-end">
+                        <div class="mh-icons d-flex align-items-center py-2">
+                            <a href="#" class="mh-icon-link"><i class="fa-solid fa-scale-balanced"></i></a>
+                            <a href="#" class="mh-icon-link"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="mh-icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="position-relative">
+                                <button class="search-button" style="border: none; background-color: #fff;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <div class="search-input d-none">
+                                    <input type="text" placeholder="Axtar...">
+                                </div>
+                            </div>
+                            <div class="position-relative lang-div">
+                                <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
+                                <div class="d-flex flex-column lang-hidden-div border rounded d-none">
+                                    <a href="#" class="border-bottom">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="sobsan-offcanvas">
+            <div class="d-flex align-items-center justify-content-around">
+                <a href="../1-main/index.html"><img src="../image/logo/sobsan-logo.svg"></a>
+                <a href="#" class="off-header-link"><i class="fa-solid fa-phone"></i></a>
+                <a href="#" class="off-header-link"><i class="fa-solid fa-question"></i></a>
+                <a href="../11.1-login/index.html" class="off-header-login"><i class="fa-solid fa-arrow-right"></i><span>Giriş</span></a>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanvas-category d-flex flex-column w-100">
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <a href="../12-mehsullar/index.html" class="main-link">Məhsullar</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-4 d-none">
+                        <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                            <a href="#">Su əsaslı boyalar</a>
+                            <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="category-alt-panel ps-5 d-none">
+                            <div class="p-3 border-bottom"><a href="#">Daxili divar boyaları</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Xarici cəbhə boyaları</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Məcunlar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Astarlar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">PVA əsaslı yapışdırıcılar</a></div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                            <a href="#">Solvent əsaslı boyalar</a>
+                            <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="category-alt-panel ps-5 d-none">
+                            <div class="p-3 border-bottom"><a href="#">Sintetik boyalar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Sellülozik boyalar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Poliuretan boyalar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Epoksi boyalar</a></div>
+                        </div>
+                        <div class="p-3 border-bottom"><a href="#">Gold Series</a></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <a href="../13-dekorativ-boyalar/index.html" class="main-link">Dekorativ Boyalar</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-4 d-none">
+                        <div class="p-3 border-bottom"><a href="#">Dekorativ daxili boyalar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Dekorativ fasad boyaları</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Astarlar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Məcunlar</a></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <a href="../14-senaye-boyalari/index.html" class="main-link">Sənayə Boyaları</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-4 d-none">
+                        <div class="p-3 border-bottom"><a href="#">Boyalar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Astarlar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Tinerlər</a></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <a href="../15-insaat-mehsullari/index.html" class="main-link">İnşaat Məhsulları</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-4 d-none">
+                        <div class="p-3 border-bottom"><a href="#">Keramika yapışdırıcıları</a></div>
+                        <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                            <a href="#" class="main-link">Gips əsaslı məhsullar</a>
+                            <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="category-alt-panel ps-5 d-none">
+                            <div class="p-3 border-bottom"><a href="#">Astarlar</a></div>
+                            <div class="p-3 border-bottom"><a href="#">Üzlüklər</a></div>
+                        </div>
+                        <div class="p-3 border-bottom"><a href="#">Dekorativ suvaqlar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Hidroizolosiya məhsulları</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Təmir suvaqları</a></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <a href="../16-boyaci-aletleri/index.html" class="main-link">Boyaçı Alətləri</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-3 d-none">
+                        <div class="p-3 border-bottom"><a href="#">Fırçalar</a></div>
+                        <div class="p-3 border-bottom"><a href="#">Rulonlar</a></div>
+                    </div>
+                    <div class="category-item position-relative">
+                        <div class="p-3 border-bottom">
+                            <a href="../17-diger/index.html" class="main-link">Digər</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-links d-flex flex-column align-items-start py-5 px-2">
+                    <div>
+                        <a href="../2.1-haqqimizda/index.html" class="main-link border-bottom py-2">Haqqımızda</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-3 d-none">
+                       <a href="../2.2-renglendirme-sistemi/index.html" class="border-bottom py-2 my-2">Rəngləndirmə sistemi haqqında</a>
+                    </div>
+                    <a href="../3-kataloqlar/index.html" class="border-bottom py-2 my-2">Kataloqlar</a>
+                    <div>
+                        <a href="#" class="main-link border-bottom py-2 my-2">Media</a>
+                        <button class="alt-panel-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="category-alt-panel ps-3 d-none">
+                        <div class="py-2 my-2"><a href="../4.1-media-aksiyalar/index.html" class="border-bottom">Aksiyalar</a></div>
+                        <div class="py-2 my-2"><a href="../4.2-media-xeberler/index.html" class="border-bottom">Xəbərlər</a></div>
+                        <div class="py-2 my-2"><a href="../4.3-media-qalereya/index.html" class="border-bottom">Qalereya</a></div>
+                    </div>
+                    <a href="../5-odenis-catdirilma/index.html" class="border-bottom py-2 my-2">Ödəniş və çatdırılma</a>
+                    <a href="../6-zemanet-sertleri/index.html" class="border-bottom py-2 my-2">Zəmanət şərtləri</a>
+                    <a href="../7-elaqe/index.html" class="border-bottom py-2 my-2">Bizimlə əlaqə</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <a href="#"><img src="../image/logo/usta_logo.png" width="120"></a>
+                <div class="sosial-icons d-flex">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header d-none d-lg-block">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="d-flex flex-column align-items-center flex-xl-row justify-content-xl-between">
+                        <div class="top-navbar-left d-flex justify-content-evenly align-items-center justify-content-xl-between">
+                            <div class="position-relative top-nav-link py-4">
+                                <div><a href="../2.1-haqqimizda/index.html" class="tnl-link">Haqqımızda</a></div>
+                                <div class="top-nav-alt-panel d-none" style="width: 270px;"><a href="../2.2-renglendirme-sistemi/index.html" class="tnl-link">Rəngləndirmə sistemləri haqqında</a></div>
+                            </div>
+                            <a href="../3-kataloqlar/index.html" class="tnl-link">Kataloqlar</a>
+                            <div class="position-relative top-nav-link py-4">
+                                <div><a href="#" class="tnl-link">Media</a></div>
+                                <div class="top-nav-alt-panel d-none" style="width: 100px;">
+                                    <div><a href="../4.1-media-aksiyalar/index.html" class="tnl-link">Aksiyalar</a></div>
+                                    <div><a href="../4.2-media-xeberler/index.html" class="tnl-link">Xəbərlər</a></div>
+                                    <div><a href="../4.3-media-qalereya/index.html" class="tnl-link">Qalareya</a></div>
+                                </div>
+                            </div>
+                            <a href="../5-odenis-catdirilma/index.html" class="tnl-link">Ödəniş və çatdırılma</a>
+                            <a href="../6-zemanet-sertleri/index.html" class="tnl-link">Zəmanət şərtləri</a>
+                            <a href="../7-elaqe/index.html" class="tnl-link">Bizimlə əlaqə</a>
+                        </div>
+                        <div class="top-navbar-right d-flex align-items-center py-4">
+                            <div class="sosial-icons d-flex mx-2">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="tnr-icons d-flex align-items-center">
+                                <a href="../8-muqayise/index.html" class="tnr-icon-link"><i class="fa-solid fa-scale-balanced"></i></a>
+                                <a href="../9-secilmisler/index.html" class="tnr-icon-link"><i class="fa-regular fa-heart"></i></a>
+                                <a href="../10-sebet/index.html" class="tnr-icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="position-relative">
+                                    <button class="search-button" style="border: none; background-color: #fff;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <div class="search-input d-none">
+                                        <input type="text" placeholder="Axtar...">
+                                    </div>
+                                </div>
+                                <div class="position-relative tnr-lang-div">
+                                    <span>Az <i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="d-flex flex-column tnr-lang-hidden-div border rounded d-none">
+                                        <a href="#" class="border-bottom">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                                <a href="../11.1-login/index.html" class="tnr-login"><span>Giriş</span><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white" id="fixed-navbar">
+                    <div class="bottom-navbar container">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="../1-main/index.html"><img src="../image/logo/sobsan-logo.svg"></a>
+                            <div class="position-relative bn-category-btn">
+                                <a href="../12-mehsullar/index.html" class="bn-category-link">Məhsullar</a>
+                                <div class="bn-category-alt-panel position-absolute d-none">
+                                    <div class="row p-4">
+                                        <div class="col-4 d-flex flex-column panel-section" style="border-right: 1px dashed #000;">
+                                            <h3><a href="#">Su əsaslı boyalar</a></h3>
+                                            <a href="#">Daxili divar boyaları</a>
+                                            <a href="#">Xarici cəbhə boyaları</a>
+                                            <a href="#">Məcunlar</a>
+                                            <a href="#">Astarlar</a>
+                                            <a href="#">PVA əsaslı yapışdırıcılar</a>
+                                        </div>
+                                        <div class=" col-4 d-flex flex-column panel-section" style="border-right: 1px dashed #000;">
+                                            <h3><a href="#">Solvent əsaslı boyalar</a></h3>
+                                            <div class="py-1">
+                                                <a href="#">Sintetik boyalar</a>
+                                                <button class="alt-panel-link-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="d-flex flex-column alt-panel-link-panel d-none">
+                                                <a href="#">Astarlar</a>
+                                                <a href="#">Son qat</a>
+                                                <a href="#">Laklar</a>
+                                                <a href="#">Tinerlər</a>
+                                            </div>
+                                            <div class="py-1">
+                                                <a href="#">Sellülozik boyalar</a>
+                                                <button class="alt-panel-link-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="d-flex flex-column alt-panel-link-panel d-none">
+                                                <a href="#">Astarlar</a>
+                                                <a href="#">Son qat</a>
+                                                <a href="#">Laklar</a>
+                                                <a href="#">Tinerlər</a>
+                                            </div>
+                                            <div class="py-1">
+                                                <a href="#">Poliuretan boyalar</a>
+                                                <button class="alt-panel-link-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="d-flex flex-column alt-panel-link-panel d-none">
+                                                <a href="#">Astarlar</a>
+                                                <a href="#">Son qat</a>
+                                                <a href="#">Laklar</a>
+                                            </div>
+                                            <div class="py-1">
+                                                <a href="#">Epoksi boyalar</a>
+                                                <button class="alt-panel-link-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="d-flex flex-column alt-panel-link-panel d-none">
+                                                <a href="#">Astarlar</a>
+                                                <a href="#">Son qat</a>
+                                                <a href="#">Laklar</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Gold Series</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bn-category-btn">
+                                <a href="../13-dekorativ-boyalar/index.html" class="bn-category-link">Dekorativ boyalar</a>
+                                <div class="bn-category-alt-panel position-absolute d-none" style="width: 800px;left: -50%;">
+                                    <div class="row p-4">
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Dekorativ daxili boyalar</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Dekorativ fasad boyaları</a></h3>
+                                        </div>
+                                        <div class="col-2 panel-section">
+                                            <h3><a href="#">Astarlar</a></h3>
+                                        </div>
+                                        <div class="col-2 panel-section">
+                                            <h3><a href="#">Məcunlar</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bn-category-btn">
+                                <a href="../14-senaye-boyalari/index.html" class="bn-category-link">Sənaye boyaları</a>
+                                <div class="bn-category-alt-panel position-absolute d-none" style="width: 500px;">
+                                    <div class="row p-4">
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Boyalar</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Astarlar</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Tinerlər</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bn-category-btn">
+                                <a href="../15-insaat-mehsullari/index.html" class="bn-category-link">İnşaat məhsulları</a>
+                                <div class="bn-category-alt-panel position-absolute d-none" style="left: -350px;width: 800px;">
+                                    <div class="row p-4">
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Keramika yapışdırıcıları</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section d-flex flex-column">
+                                            <h3><a href="#">Gips əsaslı məhsullar</a></h3>
+                                            <a href="#">Astarlar</a>
+                                            <a href="#">Üzlüklər</a>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Dekorativ suvaqlar</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Hidroizolosiya məhsulları</a></h3>
+                                        </div>
+                                        <div class="col-4 panel-section">
+                                            <h3><a href="#">Təmir suvaqları</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bn-category-btn">
+                                <a href="../16-boyaci-aletleri/index.html" class="bn-category-link">Boyaçı alətləri</a>
+                                <div class="bn-category-alt-panel position-absolute d-none" style="width: 280px;">
+                                    <div class="row p-4">
+                                        <div class="col-6 panel-section">
+                                            <h3><a href="#">Fırçalar</a></h3>
+                                        </div>
+                                        <div class="col-6 panel-section">
+                                            <h3><a href="#">Rulonlar</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a href="../17-diger/index.html" class="bn-category-link">Digər</a></div>
+                            <a href="#" class="bn-firca-image"><img src="../image/logo/usta_logo.png" width="160"></a>
+                            <div id="fixed-navbar-items" class="d-none align-items-center">
+                                <div class="position-relative">
+                                    <button class="search-button" style="border: none; background-color: #fff;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <div class="search-input d-none">
+                                        <input type="text" placeholder="Axtar...">
+                                    </div>
+                                </div>
+                                <div class="position-relative fix-lang-div">
+                                    <span>Az <i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="d-flex flex-column fix-lang-hidden-div border rounded d-none">
+                                        <a href="#" class="border-bottom">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                                <a href="../11.1-login/index.html" class="fix-login"><span>Giriş</span><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-5"></main>
+
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row py-5 w-100">
+                <div class="col-12 col-xl-2 py-5">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="../1-main/index.html"><img src="../image/logo/sobsan-logo.svg"></a>
+                        <div class="sosial-icons d-flex mx-2 my-4">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-10">
+                    <div class="row py-5">
+                        <div class="col-12 col-md-6 col-lg-3 py-4">
+                            <div class="footer-links d-flex flex-column align-items-center ">
+                                <h4>Menyular</h4>
+                                <a href="../2.1-haqqimizda/index.html">Haqqımızda</a>
+                                <a href="../3-kataloqlar/index.html">Kataloqlar</a>
+                                <a href="../4.1-media-aksiyalar/index.html">Aksiyalar</a>
+                                <a href="../4.2-media-xeberler/index.html">Xəbərlər</a>
+                                <a href="../4.3-media-qalereya/index.html">Qalereya</a>
+                                <a href="../5-odenis-catdirilma/index.html">Ödəniş və çatdırılma</a>
+                                <a href="../6-zemanet-sertleri/index.html">Zəmanət şərtləri</a>
+                                <a href="../7-elaqe/index.html">Bizimlə əlaqə</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-4">
+                            <div class="footer-links d-flex flex-column align-items-center ">
+                                <h4>Kateqoriyalar</h4>
+                                <a href="../12-mehsullar/index.html">Məhsullar</a>
+                                <a href="../13-dekorativ-boyalar/index.html">Dekorativ boyalar</a>
+                                <a href="../14-senaye-boyalari/index.html">Sənaye boyaları</a>
+                                <a href="../15-insaat-mehsullari/index.html">İnşaat məhsulları</a>
+                                <a href="../16-boyaci-aletleri/index.html">Boyaçı alətləri</a>
+                                <a href="../17-diger/index.html">Digər</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-4">
+                            <div class="footer-links d-flex flex-column align-items-center ">
+                                <h4>Ünvanlarımız</h4>
+                                <a href="#">Baş ofis</a>
+                                <a href="#">Fabrik ünvanı</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-4">
+                            <div class="footer-links d-flex flex-column align-items-center ">
+                                <h4>Faydalı linklər</h4>
+                                <a href="#">Tez-tez soruşulanlar</a>
+                                <a href="#">Karyera</a>
+                                <a href="#">Xidmət şəbəkəsi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f-bottom border-top d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between py-5 px-3">
+                <span class="text-center text-md-start p-2 fb-left">
+                    Bütün hüquqlar qorunur. <br>Hazırladı <a href="#">Pasha</a>
+                </span>
+                <div class="d-flex flex-column align-items-center align-items-md-end py-3">
+                    <span><a href="#">(+994 12) 404 45 45</a> / <a href="#">*4545</a></span>
+                    <span><a href="#">sobsan@sobsan.com</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="page-up-scroll-btn" class="position-fixed bottom-0 end-0 hover-effect"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="main-page-cards">
+        <div class="card-qaynar-xett">
+            <a href="#" class="d-flex align-items-center">
+                <i class="fa-solid fa-phone"></i>
+                <div class="d-flex flex-column align-items-center">
+                    <span>*4545</span>
+                    <span>Qaynar xətt</span>
+                </div>
+            </a>
+        </div>
+        <div class="d-flex flex-column pt-5 card-items">
+            <div class="card-sebet card-item">
+                <a href="../10-sebet/index.html" class="d-flex align-items-center">
+                    <div class="position-relative card-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="sebet-counter card-counter">0</span> 
+                    </div>
+                    <span class="card-label">Səbət</span>
+                </a>
+            </div>
+            <div class="card-secilen card-item">
+                <a href="../9-secilmisler/index.html" class="d-flex align-items-center">
+                    <div class="position-relative card-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="secilen-counter card-counter">0</span> 
+                    </div>
+                    <span class="card-label">Seçilmişlər</span>
+                </a>
+            </div>
+            <div class="card-secilen card-item">
+                <a href="../8-muqayise/index.html" class="d-flex align-items-center">
+                    <div class="position-relative card-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span class="secilen-counter card-counter">0</span> 
+                    </div>
+                    <span class="card-label">Müqayisələr</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
