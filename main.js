@@ -202,6 +202,18 @@ for(let i = 0; i < hoverEffect2.length;i++){
         })
     })(i);
 }
+let hoverEffectGreen = document.querySelectorAll(".hover-effect-green");
+for(let i = 0; i < hoverEffectGreen.length;i++){
+    (function(index){
+        hoverEffectGreen[i].addEventListener("mouseover",function(){
+            hoverEffectGreen[index].classList.add("shadow-effect-green");
+        });
+        hoverEffectGreen[i].addEventListener("mouseout",function(){
+            hoverEffectGreen[index].classList.remove("shadow-effect-green");
+        })
+    })(i);
+}
+
 
 
 
