@@ -253,3 +253,22 @@ for(let i = 0; i < searchButton.length;i++){
 
 
 
+let catalogColorButtons = document.querySelectorAll(".catalog-color-button");
+let colorAltPanel = document.querySelectorAll(".color-alt-panel");
+
+for(let i = 0; i < catalogColorButtons.length; i++){
+    (function(index){
+        catalogColorButtons[i].addEventListener("click",function(){
+            
+            if(colorAltPanel[index].classList.contains("d-none")==true){
+                for(let i = 0; i < colorAltPanel.length;i++){
+                    colorAltPanel[i].classList.add("d-none");
+                }
+                colorAltPanel[index].classList.remove("d-none");
+            }else{
+                colorAltPanel[index].classList.add("d-none");
+            }
+        })
+    })(i);
+}
+

@@ -85,3 +85,36 @@ const swiper3 = new Swiper(".main-swiper-3", {
       992: {slidesPerView: 3,spaceBetween: 20},
       },
   });
+
+  const swiper7 = new Swiper(".about-swiper-1", {
+    autoplay: {
+    delay: 5000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 20},
+      992: {slidesPerView: 3,spaceBetween: 20},
+      },
+  });
+  const swiper8 = new Swiper(".about-swiper-2", {
+    autoplay: {
+    delay: 5000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 20},
+      992: {slidesPerView: 3,spaceBetween: 20},
+      },
+  });

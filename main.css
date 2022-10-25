@@ -359,12 +359,11 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     position: fixed;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     z-index: 999;
+    transform: translate(140px, -50%);
+    
 }
 .card-qaynar-xett{
     background-color: #ED3237;
@@ -372,6 +371,7 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     animation: shadow-effect-red 1s ease infinite;
     border-radius: 10px 0 0 10px;
     z-index: 9999;
+    transform: translateX(-25%);
 }
 .card-qaynar-xett a{
     color: #fff;
@@ -379,11 +379,13 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     font-size: 1.1rem;
     font-weight: 500;
 }
+
 .card-qaynar-xett a i{
     font-size: 1.4rem;
     padding-right: 10px;
 }
 @media only screen and (min-width:992px){
+    .card-qaynar-xett{transform: translateX(-35%);}
     .card-qaynar-xett a{
         font-size: 1.4rem;
     }
@@ -399,12 +401,12 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     margin: 7px 0;
     width: 200px;
     z-index: 999;
-    transform: translateX(140px);
+    
     
 }
 .show-page-card-item{animation: show-page-card-item 0.7s ease forwards;}
 @keyframes show-page-card-item{
-    100%{transform: translateX(0);}
+    100%{transform: translateX(-110px);}
 }
 .card-items .card-item a{text-decoration: none;}
 .card-items .card-icon{
@@ -803,3 +805,151 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
 .sobsan-main .main-swiper-6 .swiper-pagination-bullet-active{background-color: #ed3237;bottom: 0;}
 .sobsan-main .partner-image{width: 90%; height: 150px;}
 .sobsan-main .partner-image img{width: 100%; height: 100%;object-fit: contain;}
+
+/*MAIN ESAS BASLIQ*/
+.main-top-header{padding: 15px 5px;border-bottom: 1px solid rgba(0,0,0,0.2);}
+.main-top-header .links{color: rgba(0,0,0,0.4);}
+.main-top-header .links a{font-size: 1.4rem;color: rgba(0,0,0,0.4);transition: 0.3s;}
+.main-top-header .links i{padding: 0 5px;}
+.main-top-header .links a:hover{color: #ed3237;}
+.main-top-header h3{font-size: 2.5rem;padding: 10px 0; font-weight: bold;}
+
+
+
+.sobsan-about .about-content{padding: 30px 10px;}
+.sobsan-about .about-content .col-12{padding: 15px;}
+.sobsan-about .about-content p{
+    font-size: 1.6rem;
+}
+
+
+
+.sobsan-about .swiper-section-5{padding: 40px 0;}
+.sobsan-about .video-item{position: relative;border-radius: 10px;}
+.sobsan-about .video-poster {width: 100%;height: 300px;}
+.sobsan-about .video-poster img{width: 100%;height: 100%;object-fit: cover;border-radius: 25px;}
+
+.sobsan-about .video-item .video-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.sobsan-about .video-item .video-box a{text-decoration: none;}
+.sobsan-about .video-item .video-box .play-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #DFDBD8;
+    animation: shadow-effect-white 1s ease infinite;
+}
+
+
+
+
+.sobsan-kataloq .kataloq-items-buttons{overflow-y: auto;}
+.sobsan-kataloq .kataloq-items-buttons::-webkit-scrollbar{height: 5px;}
+.sobsan-kataloq .kataloq-items-buttons::-webkit-scrollbar-thumb{background-color: #ed3237; border-radius: 10px;}
+.sobsan-kataloq .kataloq-items-buttons::-webkit-scrollbar-track{background-color: #fff;}
+.sobsan-kataloq .kataloq-items-buttons .kataloq-btn{
+    padding: 10px 20px;
+    margin: 0 5px;
+    min-width: 225px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 7px;
+    border: none;
+    color: rgba(0,0,0,0.7);
+    transition: 0.3s;
+}
+.sobsan-kataloq .kataloq-items-buttons .kataloq-btn:hover{background: #ed3237;color: #fff;}
+@media only screen and (min-width:1201px){
+    .sobsan-kataloq .kataloq-items-buttons .kataloq-btn{min-width: auto;}
+}
+.active-btn{background: #ed3237;color: #fff !important;}
+
+
+
+
+#kataloq-accordion .accordion-button{font-size: 1.8rem;}
+#kataloq-accordion .accordion-button:not(.collapsed) {
+    background: url("image/3-kataloq/button/large-drop-bg.png") #ed3237;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    box-shadow: none;}
+.accordion-button:focus {border-color: #fff;box-shadow: none;}
+.accordion-button:not(.collapsed)::after {background-image: url("image/3-kataloq/button/chevron-white.webp"); transform: rotate(180deg);}
+
+
+
+
+
+.catalog-color-button{
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.catalog-color-image{
+    width: 100%;
+    height: 170px;
+}
+.catalog-color-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.color-name{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 18px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+}
+.color-alt-panel{background-color: #EFEFEF;width: 100%; padding: 20px 0;}
+
+.color-version{
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+@media only screen and (min-width:768px){
+    .catalog-color-button{
+        margin: 10px;
+        border-radius: 30px;
+    }
+    
+    .catalog-color-image{
+        width: 100%;
+        height: 200px;
+    }
+    .catalog-color-image img{
+        
+        border-radius: 30px 30px 0 0;
+    }
+    .color-name{
+        border-radius: 0 0 30px 30px;
+    }
+    
+    .color-version{
+        margin: 10px;
+        border-radius: 30px;
+    }
+}
