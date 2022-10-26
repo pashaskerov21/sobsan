@@ -991,3 +991,87 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
 .universal-color .universal-image img{width: 100%;height: 100%;object-fit: cover;}
 .universal-color span{text-align: center;padding: 6px 0 15px;font-size: 1.4rem;font-weight: 500;}
 @media only screen and (min-width:768px){.universal-color .universal-image{height: 160px;}}
+
+
+
+
+.button-foto, .button-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gallery-active{
+    background: url("image/4-gallery/large-drop-bg.png") #ed3237;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff !important; 
+}
+
+.foto-wrapper{
+    animation: show-foto-wrapper 1s ease forwards;
+}
+@keyframes show-foto-wrapper{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.foto-wrapper a{
+    display: block;
+    width: 100%;
+    height: 300px;   
+    transition: 0.3s;
+    margin: 10px 0; 
+}
+.foto-wrapper a:hover{
+    transform: scale(0.9);
+}
+.foto-wrapper a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.video-wrapper{
+    animation: show-video-wrapper 1s ease forwards;
+}
+@keyframes show-video-wrapper{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.sobsan-gallery .video-item{position: relative;margin: 10px 0;transition: 0.3s;cursor: pointer;}
+.sobsan-gallery .video-item:hover{transform: scale(0.9);}
+.sobsan-gallery .video-poster {width: 100%;height: 300px;}
+.sobsan-gallery .video-poster img{width: 100%;height: 100%;object-fit: cover;}
+
+.sobsan-gallery .video-item .video-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobsan-gallery .video-item .video-box a{text-decoration: none;}
+.sobsan-gallery .video-item .video-box .play-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #DFDBD8;
+    animation: shadow-effect-white 1s ease infinite;
+}
