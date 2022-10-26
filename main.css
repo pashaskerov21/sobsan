@@ -942,7 +942,6 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
         height: 200px;
     }
     .catalog-color-image img{
-        
         border-radius: 30px 30px 0 0;
     }
     .color-name{
@@ -956,4 +955,113 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
         margin: 10px;
         border-radius: 30px;
     }
+}
+
+
+.accordion-body .notice{
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+}
+
+
+.sedef-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sedef-color .sedef-image{
+    width: 100%;
+    height: 130px;
+}
+.sedef-color .sedef-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sedef-color span{
+    text-align: center;
+    padding: 6px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media only screen and (min-width:768px){
+    .sedef-color .sedef-image{height: 110px;}
+}
+
+
+
+.kristal-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kristal-color .kristal-image{
+    width: 100%;
+    height: 200px;
+}
+.kristal-color .kristal-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.kristal-color span{
+    text-align: center;
+    padding: 6px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media only screen and (min-width:768px){
+    .kristal-color .kristal-image{height: 180px;}
+}
+
+
+.mineral-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mineral-color .mineral-image{
+    width: 100%;
+    height: 130px;
+}
+.mineral-color .mineral-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mineral-color span{
+    text-align: center;
+    padding: 6px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media only screen and (min-width:768px){
+    .mineral-color .mineral-image{height: 160px;}
+}
+
+.sellulozik-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sellulozik-color .sellulozik-image{
+    width: 100%;
+    height: 130px;
+}
+.sellulozik-color .sellulozik-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sellulozik-color span{
+    text-align: center;
+    padding: 6px 0 15px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+@media only screen and (min-width:768px){
+    .sellulozik-color .sellulozik-image{height: 160px;}
 }
