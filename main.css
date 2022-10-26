@@ -401,8 +401,7 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     margin: 7px 0;
     width: 200px;
     z-index: 999;
-    
-    
+    cursor: pointer;    
 }
 .show-page-card-item{animation: show-page-card-item 0.7s ease forwards;}
 @keyframes show-page-card-item{
@@ -442,6 +441,7 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     font-size: 1.6rem;
     color: #000;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /*------FIXED NAV ITEMS-------*/
@@ -1075,3 +1075,15 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     background-color: #DFDBD8;
     animation: shadow-effect-white 1s ease infinite;
 }
+
+
+.sobsan-odenis .content{font-size: 1.4rem;padding: 20px;}
+.sobsan-odenis .content span{padding: 10px 0;}
+.sobsan-odenis .image{width: 90%;}
+.sobsan-odenis .image img{width: 100%; object-fit: cover;}
+
+
+.sobsan-zemanet .content{font-size: 1.4rem;padding: 20px;}
+.sobsan-zemanet .content span{padding: 10px 0;}
+.sobsan-zemanet .image{width: 90%;}
+.sobsan-zemanet .image img{width: 100%; object-fit: cover;}
