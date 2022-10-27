@@ -385,7 +385,7 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
     padding-right: 10px;
 }
 @media only screen and (min-width:992px){
-    .card-qaynar-xett{transform: translateX(-35%);}
+    .card-qaynar-xett{transform: translateX(-30%);}
     .card-qaynar-xett a{
         font-size: 1.4rem;
     }
@@ -812,7 +812,7 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
 .main-top-header .links a{font-size: 1.4rem;color: rgba(0,0,0,0.4);transition: 0.3s;}
 .main-top-header .links i{padding: 0 5px;}
 .main-top-header .links a:hover{color: #ed3237;}
-.main-top-header h3{font-size: 2.5rem;padding: 10px 0; font-weight: bold;}
+.main-top-header h3{font-size: 2.5rem;padding: 15px 0 0; font-weight: bold;}
 
 
 
@@ -1101,7 +1101,6 @@ form .form-control{
     font-size: 1.6rem;
     font-weight: 600;
     border-radius: 0;
-    margin-bottom: 30px;
 }
 
 
@@ -1115,17 +1114,36 @@ form .form-control:focus {
     border-color: #ed3237;
 }
 
-.form-sumbit-btn{
+.form-red-btn{
     border: none;
     background-color: #ed3237;
     color: #fff;
     padding: 10px 40px;
     font-size: 1.6rem;
+    font-weight: 500;
 }
-.form-sumbit-btn:hover{
+.form-red-btn:hover{
     animation: shadow-effect-red 1s ease;
 }
+.form-white-btn{
+    border: 1px solid #ED3237;
+    background-color: #fff;
+    color: #ED3237;
+    font-weight: 500;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+}
+.form-white-btn a{text-decoration: none; color: #ED3237;}
+.form-white-btn:hover{
+    animation: shadow-effect-white 1s ease;
+}
 
+form a{
+    font-size: 1.6rem;
+    padding: 10px 0;
+    color: #ed3237;
+}
+form a:hover{color: #ED3237;}
 
 .contact-right{
     display: flex;
@@ -1148,7 +1166,7 @@ form .form-control:focus {
     color: #fff;
     padding: 10px 0;
 }
-.contact-right a{
+.contact-right .link{
     text-decoration: none;
     font-size: 1.6rem;
     color: #fff;
@@ -1166,10 +1184,23 @@ form .form-control:focus {
     align-items: center;
     background-color: #fff;
     color: #ed3237;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
     margin: 0 10px;
     transition: 0.3s;
 }
 .contact-right .sosial-icons a:hover{
     transform: scale(1.1);
     box-shadow: 0 0 5px #fff;
+}
+
+.contact-right .logo{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
