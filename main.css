@@ -1087,3 +1087,89 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
 .sobsan-zemanet .content span{padding: 10px 0;}
 .sobsan-zemanet .image{width: 90%;}
 .sobsan-zemanet .image img{width: 100%; object-fit: cover;}
+
+
+.form-text{font-size: 1.6rem; padding: 15px 5px;}
+
+
+
+
+form .form-control{
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    resize: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+
+form textarea.form-control {
+    min-height: 150px;
+    border: 1px solid #cdcdcd;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #ed3237;
+}
+
+.form-sumbit-btn{
+    border: none;
+    background-color: #ed3237;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+}
+.form-sumbit-btn:hover{
+    animation: shadow-effect-red 1s ease;
+}
+
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: url("image/large-drop-bg.png") #ED3237;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.contact-right .panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-right .icon{
+    font-size: 4.5rem;
+    color: #fff;
+    padding: 10px 0;
+}
+.contact-right a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 2px 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-right .sosial-icons{display: flex;}
+.contact-right .sosial-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #ed3237;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.contact-right .sosial-icons a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #fff;
+}

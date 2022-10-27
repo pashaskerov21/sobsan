@@ -270,20 +270,3 @@ for(let i = 0; i < catalogColorButtons.length; i++){
 
 
 
-let buttonFoto = document.querySelector(".gallery-buttons .button-foto");
-let buttonVideo = document.querySelector(".gallery-buttons .button-video");
-let wrapperFoto = document.querySelector(".foto-wrapper");
-let wrapperVideo = document.querySelector(".video-wrapper");
-
-buttonFoto.addEventListener("click",function(){
-    buttonVideo.classList.remove("gallery-active");
-    buttonFoto.classList.add("gallery-active");
-    wrapperVideo.classList.add("d-none");
-    wrapperFoto.classList.remove("d-none");
-})
-buttonVideo.addEventListener("click",function(){
-    buttonFoto.classList.remove("gallery-active");
-    buttonVideo.classList.add("gallery-active");
-    wrapperFoto.classList.add("d-none");
-    wrapperVideo.classList.remove("d-none");
-})
