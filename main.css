@@ -234,6 +234,7 @@ header{position: relative;}
     padding: 5px 15px;
 }
 .tnr-login{text-decoration: none;color: #000;padding: 0 10px;}
+.tnr-login:hover{text-decoration: none;color: #000;}
 .tnr-login i{color: #ED3237;font-size: 1.4rem;padding: 0 5px;}
 
 
@@ -1090,10 +1091,6 @@ footer .fb-left a{text-decoration: none;color: #ED3237;}
 
 
 .form-text{font-size: 1.6rem; padding: 15px 5px;}
-
-
-
-
 form .form-control{
     border: none;
     border-bottom: 1px solid #cdcdcd;
@@ -1103,16 +1100,8 @@ form .form-control{
     border-radius: 0;
 }
 
-
-form textarea.form-control {
-    min-height: 150px;
-    border: 1px solid #cdcdcd;
-}
-
-form .form-control:focus {
-    box-shadow: none;
-    border-color: #ed3237;
-}
+form textarea.form-control {min-height: 150px;border: 1px solid #cdcdcd;}
+form .form-control:focus {box-shadow: none;border-color: #ed3237;}
 
 .form-red-btn{
     border: none;
@@ -1122,9 +1111,7 @@ form .form-control:focus {
     font-size: 1.6rem;
     font-weight: 500;
 }
-.form-red-btn:hover{
-    animation: shadow-effect-red 1s ease;
-}
+.form-red-btn:hover{animation: shadow-effect-red 1s ease;}
 .form-white-btn{
     border: 1px solid #ED3237;
     background-color: #fff;
@@ -1134,15 +1121,9 @@ form .form-control:focus {
     font-size: 1.6rem;
 }
 .form-white-btn a{text-decoration: none; color: #ED3237;}
-.form-white-btn:hover{
-    animation: shadow-effect-white 1s ease;
-}
+.form-white-btn:hover{animation: shadow-effect-white 1s ease;}
 
-form a{
-    font-size: 1.6rem;
-    padding: 10px 0;
-    color: #ed3237;
-}
+form a{font-size: 1.6rem;padding: 10px 0;color: #ed3237;}
 form a:hover{color: #ED3237;}
 
 .contact-right{
@@ -1156,16 +1137,8 @@ form a:hover{color: #ED3237;}
     background-size: cover;
     width: 100%;
 }
-.contact-right .panel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-right .icon{
-    font-size: 4.5rem;
-    color: #fff;
-    padding: 10px 0;
-}
+.contact-right .panel{display: flex;flex-direction: column;align-items: center;}
+.contact-right .icon{font-size: 4.5rem;color: #fff;padding: 10px 0;}
 .contact-right .link{
     text-decoration: none;
     font-size: 1.6rem;
@@ -1174,7 +1147,6 @@ form a:hover{color: #ED3237;}
     text-align: center;
     font-weight: 500;
 }
-
 .contact-right .sosial-icons{display: flex;}
 .contact-right .sosial-icons a{
     width: 40px;
@@ -1190,11 +1162,7 @@ form a:hover{color: #ED3237;}
     margin: 0 10px;
     transition: 0.3s;
 }
-.contact-right .sosial-icons a:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 5px #fff;
-}
-
+.contact-right .sosial-icons a:hover{transform: scale(1.1);box-shadow: 0 0 5px #fff;}
 .contact-right .logo{
     width: 120px;
     height: 120px;
@@ -1203,4 +1171,106 @@ form a:hover{color: #ED3237;}
     align-items: center;
     background-color: #fff;
     margin-bottom: 20px;
+}
+
+
+
+.catalog-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.active-catalog{
+    background-color: #ed3237 !important;
+}
+.active-catalog a{color: #fff !important;}
+.active-catalog a:hover{color: #fff !important;}
+.active-catalog span{color: #fff !important;}
+.catalog-item a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.catalog-item a:hover{color: #ed3237;}
+.catalog-item .chevron{
+    font-size: 1.4rem;
+    color: #ed3237;
+}
+
+.catalog-alt-menu-1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.catalog-alt-menu-2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+
+.catalog-right-panel-1{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    z-index: 99;
+    
+}
+.catalog-right-panel-2{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    z-index: 100;
+}
+
+.filters-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;   
+}
+
+.filters-wrapper .filter-btn{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.filters-wrapper .filter-btn .chevron{
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+.chevron-rotate-down{animation: chevron-rotate-down 0.3s ease forwards;}
+.chevron-rotate-up{animation: chevron-rotate-up 0.3s ease forwards;}
+@keyframes chevron-rotate-down{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(180deg);}
+}
+@keyframes chevron-rotate-up{
+    0%{transform: rotate(180deg);}
+    100%{transform: rotate(0);}
 }

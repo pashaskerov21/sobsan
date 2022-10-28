@@ -62,6 +62,8 @@ for(let i = 0; i < altPanelBtn.length; i++){
 
 
 
+
+
 // top navbar link open alt panels
 let topNavLink = document.querySelectorAll(".top-nav-link");
 let topNavAltPanel = document.querySelectorAll(".top-nav-alt-panel");
@@ -269,4 +271,71 @@ for(let i = 0; i < catalogColorButtons.length; i++){
 }
 
 
+
+
+// mehusllar sehifesi
+let filterButton = document.querySelectorAll(".filters-wrapper .filter-btn");
+let filterBtnChevron = document.querySelectorAll(".filters-wrapper .filter-btn .chevron i");
+for(let i = 0; i < filterButton.length;i++){
+    (function(index){
+        filterButton[i].addEventListener("click",function(){
+            if(filterButton[index].classList.contains("status-close")==false){
+                filterButton[index].classList.add("status-close");
+                filterBtnChevron[index].classList.remove("chevron-rotate-up");
+                filterBtnChevron[index].classList.add("chevron-rotate-down");
+            }else{
+                filterButton[index].classList.remove("status-close");
+                filterBtnChevron[index].classList.remove("chevron-rotate-down");
+                filterBtnChevron[index].classList.add("chevron-rotate-up");
+            }
+        })
+    })(i);
+}
+
+let productCatalogItem = document.querySelectorAll(".catalog-mobile .catalog-item");
+let catalogItemChevron = document.querySelectorAll(".catalog-mobile .catalog-item .chevron");
+for(let i = 0; i < productCatalogItem.length; i++){
+    (function(index){
+        productCatalogItem[i].addEventListener("click",function(){
+            if(productCatalogItem[index].classList.contains("status-open")==false){
+                productCatalogItem[index].classList.add("status-open");
+                catalogItemChevron[index].classList.remove("rotate-right-arrow-90");
+                catalogItemChevron[index].classList.add("rotate-down-arrow-90");
+            }else{
+                productCatalogItem[index].classList.remove("status-open");
+                catalogItemChevron[index].classList.remove("rotate-down-arrow-90");
+                catalogItemChevron[index].classList.add("rotate-right-arrow-90");
+            }
+        })
+    })(i);
+}
+
+let mainCatalogBtn1 = document.querySelectorAll(".catalog-main .main-catalog-btn-1");
+let catalogRightPanel1 = document.querySelectorAll(".catalog-main .catalog-right-panel-1");
+let mainCatalogBtn2 = document.querySelectorAll(".catalog-main .main-catalog-btn-2");
+let catalogRightPanel2 = document.querySelectorAll(".catalog-main .catalog-right-panel-2");
+
+
+
+for(let i = 0; i < mainCatalogBtn1.length; i++){
+    (function(index){
+        mainCatalogBtn1[i].addEventListener("mouseenter",function(){
+            catalogRightPanel1[index].classList.remove("d-none");
+        })
+        mainCatalogBtn1[i].addEventListener("mouseleave",function(){
+            catalogRightPanel1[index].classList.add("d-none");
+        })
+    })(i);
+}
+
+for(let i = 0; i < mainCatalogBtn2.length; i++){
+    (function(index){
+        mainCatalogBtn2[i].addEventListener("mouseenter",function(){
+            catalogRightPanel2[index].classList.remove("d-none");
+        })
+        mainCatalogBtn2[i].addEventListener("mouseleave",function(){
+            catalogRightPanel2[index].classList.add("d-none");
+        })
+    })(i);
+}
 
