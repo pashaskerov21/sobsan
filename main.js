@@ -274,23 +274,7 @@ for(let i = 0; i < catalogColorButtons.length; i++){
 
 
 // mehusllar sehifesi
-let filterButton = document.querySelectorAll(".filters-wrapper .filter-btn");
-let filterBtnChevron = document.querySelectorAll(".filters-wrapper .filter-btn .chevron i");
-for(let i = 0; i < filterButton.length;i++){
-    (function(index){
-        filterButton[i].addEventListener("click",function(){
-            if(filterButton[index].classList.contains("status-close")==false){
-                filterButton[index].classList.add("status-close");
-                filterBtnChevron[index].classList.remove("chevron-rotate-up");
-                filterBtnChevron[index].classList.add("chevron-rotate-down");
-            }else{
-                filterButton[index].classList.remove("status-close");
-                filterBtnChevron[index].classList.remove("chevron-rotate-down");
-                filterBtnChevron[index].classList.add("chevron-rotate-up");
-            }
-        })
-    })(i);
-}
+
 
 let productCatalogItem = document.querySelectorAll(".catalog-mobile .catalog-item");
 let catalogItemChevron = document.querySelectorAll(".catalog-mobile .catalog-item .chevron");
@@ -339,3 +323,77 @@ for(let i = 0; i < mainCatalogBtn2.length; i++){
     })(i);
 }
 
+
+let filterPanel = document.querySelectorAll(".filters-wrapper .filter-panel");
+let filterPanelChevron = document.querySelectorAll(".filters-wrapper .filter-panel .chevron i");
+for(let i = 0; i < filterPanel.length;i++){
+    (function(index){
+        filterPanel[i].addEventListener("click",function(){
+            if(filterPanel[index].classList.contains("status-close")==false){
+                filterPanel[index].classList.add("status-close");
+                filterPanelChevron[index].classList.remove("chevron-rotate-up");
+                filterPanelChevron[index].classList.add("chevron-rotate-down");
+            }else{
+                filterPanel[index].classList.remove("status-close");
+                filterPanelChevron[index].classList.remove("chevron-rotate-down");
+                filterPanelChevron[index].classList.add("chevron-rotate-up");
+            }
+        })
+    })(i);
+}
+
+
+// Range Input
+const rangeInput = document.querySelectorAll(".range-input input");
+const priceInput = document.querySelectorAll(".price-input input");
+const progress = document.querySelector(".slider .progress");
+
+let priceGap = 20;
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(priceInput[0].value);
+    let maxVal = parseInt(priceInput[1].value);
+
+    if (maxVal - minVal >= priceGap && maxVal <= 200) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = minVal;
+        progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      } else {
+        rangeInput[1].value = maxVal;
+        progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value);
+    let maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.className === "range-min") {
+        rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+
+
+
+// filter button
+let filterButtons = document.querySelectorAll(".filters-wrapper .filter-button");
+for(let i = 0; i < filterButtons.length; i++){
+    (function(index){
+        filterButtons[i].addEventListener("click",function(){
+            filterButtons[index].classList.toggle("active-filter-button")
+        })
+    })(i);
+}

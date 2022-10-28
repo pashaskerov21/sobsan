@@ -390,8 +390,8 @@
         <div class="main-wrapper d-flex justify-content-center w-100">
             <div class="row w-100">
                 <div class="wrapper-left-panel col-12 col-lg-4 col-xl-3 border p-0">
-                    <div class="d-flex flex-column">
-                        <div class="catalog-mobile d-lg-none">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="catalog-mobile d-lg-none w-100">
                             <div class="catalog-item active-catalog" data-bs-toggle="collapse" href="#mehsullar-collapse" role="button">
                                 <a href="../12-mehsullar/index.html">Məhsullar</a>
                                 <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
@@ -545,7 +545,7 @@
                                 <span class="chevron d-none"><i class="fa-solid fa-chevron-right"></i></span>
                             </div>
                         </div>
-                        <div class="catalog-main d-none d-lg-block">
+                        <div class="catalog-main d-none d-lg-block w-100">
                             <div class="position-relative main-catalog-btn-1">
                                 <div class="catalog-item active-catalog">
                                     <a href="../12-mehsullar/index.html">Məhsullar</a>
@@ -718,13 +718,104 @@
                             </div>
                         </div>
                         <div class="filters-wrapper">
-                            <button class="filter-btn"><span>Qiymət</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Brend</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Xüsusiyyətləri</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Tipi</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Tətbiq sahələri</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Görünüş</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
-                            <button class="filter-btn"><span>Quruma</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span></button>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#qiymet-collapse">
+                                <span>Qiymət</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="qiymet-collapse">
+                                <div class="range-wrapper">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="200" value="0">
+                                        <input type="range" class="range-max" min="0" max="200" value="200">
+                                    </div>
+                                    <div class="price-input">
+                                      <div class="field">
+                                          <input type="number" class="input-min" value="0">
+                                          <span>AZN</span>
+                                      </div>
+                                      <div class="field">
+                                          <input type="number" class="input-max" value="200">
+                                          <span>AZN</span>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#brend-collapse">
+                                <span>Brend</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="brend-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Sobsan</button>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#xususiyyet-collapse">
+                                <span>Xüsusiyyətləri</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="xususiyyet-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Silinə bilən</button>
+                                    <button class="filter-button">Antibakterial</button>
+                                    <button class="filter-button">Antikorroziv</button>
+                                    <button class="filter-button">UV dözümlü</button>
+                                    <button class="filter-button">Yuyula bilən</button>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#tip-collapse">
+                                <span>Tipi</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="tip-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Su əsaslı</button>
+                                    <button class="filter-button">Sintetik</button>
+                                    <button class="filter-button">Sellülozik</button>
+                                    <button class="filter-button">Epoksi</button>
+                                    <button class="filter-button">Poliuretan</button>
+                                    <button class="filter-button">Tiner</button>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#tetbiq-collapse">
+                                <span>Tətbiq sahələri</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="tetbiq-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Daxili cəbhə</button>
+                                    <button class="filter-button">Xarici cəbhə</button>
+                                    <button class="filter-button">Tavan</button>
+                                    <button class="filter-button">Metal səth</button>
+                                    <button class="filter-button">Taxta səth</button>
+                                    <button class="filter-button">Parket və Mebel</button>
+                                    <button class="filter-button">Beton səth</button>
+                                    <button class="filter-button">Daş səth</button>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#gorunus-collapse">
+                                <span>Görünüş</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="gorunus-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Parlaq</button>
+                                    <button class="filter-button">Mat</button>
+                                    <button class="filter-button">Yarı-mat</button>
+                                    <button class="filter-button">Yarı-parlaq</button>
+                                    <button class="filter-button">Yarı-şəffaf</button>
+                                    <button class="filter-button">Şəffaf</button>
+                                    <button class="filter-button">İpək-mat</button>
+                                </div>
+                            </div>
+                            <button class="filter-panel" data-bs-toggle="collapse" href="#quruma-collapse">
+                                <span>Quruma</span><span class="chevron"><i class="fa-solid fa-chevron-up"></i></span>
+                            </button>
+                            <div class="collapse show w-100" id="quruma-collapse">
+                                <div class="d-flex flex-wrap">
+                                    <button class="filter-button">Tez quruyan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 main-buttons">
+                            <button class="confirm-button">Təsdiqlə</button>
+                            <button class="reset-button">Sıfırla</button>
                         </div>
                     </div>
                 </div>
