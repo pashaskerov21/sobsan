@@ -397,3 +397,96 @@ for(let i = 0; i < filterButtons.length; i++){
         })
     })(i);
 }
+
+
+
+
+
+
+
+
+
+// sebet button
+let sebetButton = document.querySelectorAll(".sebet-btn");
+let sebetCounterSpan = document.querySelector(".sebet-counter");
+let sebetCounterValue = parseInt(document.querySelector(".sebet-counter").innerHTML);
+
+for(let i = 0; i < sebetButton.length; i++){
+    (function(index){
+        sebetButton[i].addEventListener("click",function(){
+            if(sebetButton[index].classList.contains("active-sebet-btn") == false){
+                sebetButton[index].classList.add("active-sebet-btn");
+                sebetCounterValue += 1;
+                sebetCounterSpan.innerHTML = sebetCounterValue;
+            }else{
+                sebetButton[index].classList.remove("active-sebet-btn");
+                sebetCounterValue -= 1;
+                sebetCounterSpan.innerHTML = sebetCounterValue;
+            }
+        })
+    })(i);
+}
+
+
+
+// muqayise button
+let muqayiseButton = document.querySelectorAll(".muqayise-btn");
+let muqayiseCounterSpan = document.querySelector(".muqayise-counter");
+let muqayiseCounterValue = parseInt(document.querySelector(".muqayise-counter").innerHTML);
+
+for(let i = 0; i < muqayiseButton.length; i++){
+    (function(index){
+        muqayiseButton[i].addEventListener("click",function(){
+            if(muqayiseButton[index].classList.contains("active-muqayise-btn") == false){
+                muqayiseButton[index].classList.add("active-muqayise-btn");
+                muqayiseCounterValue += 1;
+                muqayiseCounterSpan.innerHTML = muqayiseCounterValue;
+            }else{
+                muqayiseButton[index].classList.remove("active-muqayise-btn");
+                muqayiseCounterValue -= 1;
+                muqayiseCounterSpan.innerHTML = muqayiseCounterValue;
+            }
+        })
+    })(i);
+}
+
+// Like button 
+let favoriteButton = document.querySelectorAll(".favorite-btn");
+let disslikeICon = document.querySelectorAll(".favorite-btn .disslike");
+let likeICon = document.querySelectorAll(".favorite-btn .like");
+
+let favoriteCounterSpan = document.querySelector(".favorite-counter");
+let favoriteCounterValue = parseInt(document.querySelector(".favorite-counter").innerHTML);
+
+for(let i = 0; i < favoriteButton.length; i++){
+    (function(index){
+        favoriteButton[i].addEventListener("click",function(){
+            if(likeICon[index].classList.contains("d-none")==true){
+                disslikeICon[index].classList.add("d-none");
+                likeICon[index].classList.remove("d-none");
+                favoriteCounterValue += 1;
+                favoriteCounterSpan.innerHTML = favoriteCounterValue;
+            }else{
+                likeICon[index].classList.add("d-none");
+                disslikeICon[index].classList.remove("d-none");
+                favoriteCounterValue -= 1;
+                favoriteCounterSpan.innerHTML = favoriteCounterValue;
+            }
+        })
+    })(i);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
