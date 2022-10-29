@@ -23,8 +23,8 @@ listButton.addEventListener("click",function(){
 
     productsWrapper.classList.add("products-wrapper-remastered");
     for(let i = 0; i < productItem.length; i++){
-        productItem[i].classList.remove("col-6","col-xl-4");
-        productItem[i].classList.add("col-12","product-item-remastered");
+        productItem[i].classList.remove("col-md-6","col-xl-4");
+        productItem[i].classList.add("product-item-remastered");
     }
     for(let i = 0; i < productCard.length;i++){
         productCard[i].classList.add("card-remastered");
@@ -50,8 +50,8 @@ cellButton.addEventListener("click",function(){
 
     productsWrapper.classList.remove("products-wrapper-remastered");
     for(let i = 0; i < productItem.length; i++){
-        productItem[i].classList.remove("col-12","product-item-remastered");
-        productItem[i].classList.add("col-6","col-xl-4");   
+        productItem[i].classList.remove("product-item-remastered");
+        productItem[i].classList.add("col-md-6","col-xl-4");   
     }
     for(let i = 0; i < productCard.length;i++){
         productCard[i].classList.remove("card-remastered");
