@@ -16,7 +16,7 @@
 <body>
     
     <header>
-        <div class="mobile-header">
+        <div class="mobile-header d-lg-none">
             <div class="container">
                 <div class="row w-100">
                     <div class="col-4 d-flex align-items-center justify-content-start">
@@ -29,12 +29,12 @@
                         </button>
                     </div>
                     <div class="col-8 d-flex align-items-center justify-content-end p-0">
-                        <div class="mh-icons d-flex align-items-center">
-                            <a href="#" class="mh-link"><img src="image/icons/icons-compare.svg"></a>
-                            <a href="#" class="mh-link"><img src="image/icons/icons-favourite.svg"></a>
-                            <a href="#" class="mh-link"><img src="image/icons/icons-cart.svg"></a></a>
+                        <div class="header-icons">
+                            <a href="#" class="icon-link"><img src="image/icons/icons-compare.svg"></a>
+                            <a href="#" class="icon-link"><img src="image/icons/icons-favourite.svg"></a>
+                            <a href="#" class="icon-link"><img src="image/icons/icons-cart.svg"></a>
                             <div class="dropdown search-dropdown">
-                                <button class="dropdown-toggle search-button mh-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="dropdown-toggle search-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="image/icons/loupe.svg">
                                 </button>
                                 <div class="dropdown-menu">
@@ -42,9 +42,9 @@
                                         <input type="text" placeholder="Axtar...">
                                     </div>
                                 </div>
-                              </div>
-                              <div class="dropdown language-dropdown">
-                                <button class="dropdown-toggle language-button mh-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </div>
+                            <div class="dropdown language-dropdown">
+                                <button class="dropdown-toggle language-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
                                 </button>
                                 <div class="dropdown-menu">
@@ -53,7 +53,7 @@
                                         <a href="#">Ru</a>
                                     </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div> 
                 </div>
@@ -193,6 +193,66 @@
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="left">
+                        <div class="tn-dropdown">
+                            <a href="#" class="top-nav-link">Haqqımızda</a>
+                            <div class="tn-dropdown-menu lg d-none">
+                                <a href="#" class="top-nav-link">Rəngləndirmə sistemləri haqqında</a>
+                            </div>
+                        </div>
+                        <a href="#" class="top-nav-link">Kataloqlar</a>
+                        <div class="tn-dropdown">
+                            <a href="#" class="top-nav-link">Media</a>
+                            <div class="tn-dropdown-menu d-none">
+                                <a href="#" class="top-nav-link">Aksiyalar</a>
+                                <a href="#" class="top-nav-link">Xəbərlər</a>
+                                <a href="#" class="top-nav-link">Qalareya</a>
+                            </div>
+                        </div>
+                        <a href="#" class="top-nav-link">Ödəniş və çatdırılma</a>
+                        <a href="#" class="top-nav-link">Zəmanət şərtləri</a>
+                        <a href="#" class="top-nav-link">Bizimlə əlaqə</a>
+                    </div>
+                    <div class="right">
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="header-icons">
+                            <a href="#" class="icon-link"><img src="image/icons/icons-compare.svg"></a>
+                            <a href="#" class="icon-link"><img src="image/icons/icons-favourite.svg"></a>
+                            <a href="#" class="icon-link"><img src="image/icons/icons-cart.svg"></a>
+                            <div class="dropdown search-dropdown">
+                                <button class="dropdown-toggle search-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="image/icons/loupe.svg">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="search-input-div">
+                                        <input type="text" placeholder="Axtar...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown language-dropdown">
+                                <button class="dropdown-toggle language-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="lang-wrapper">
+                                        <a href="#">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="icon-link login"><img src="image/icons/icons-login.svg"><span>Giriş</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -16,3 +16,17 @@ for(let i = 0; i< categoryButtons.length;i++){
         })
     })(i);
 }
+
+let topNavDropdowns = document.querySelectorAll(".tn-dropdown");
+let topNavDropdownMenus = document.querySelectorAll(".tn-dropdown-menu");
+
+for(let i = 0;i < topNavDropdowns.length;i++){
+    (function(index){
+        topNavDropdowns[i].addEventListener("mouseover",function(){
+            topNavDropdownMenus[index].classList.remove("d-none")
+        });
+        topNavDropdowns[i].addEventListener("mouseout",function(){
+            topNavDropdownMenus[index].classList.add("d-none")
+        });
+    })(i);
+}

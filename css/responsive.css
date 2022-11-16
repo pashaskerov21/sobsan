@@ -5,4 +5,27 @@
 /* @media only screen and (min-width:540px){}
 @media only screen and (min-width:768px){}
 @media only screen and (min-width:992px){}
-@media only screen and (min-width:1200px){} */
+*/
+@media only screen and (min-width:1200px){
+    .top-navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .top-navbar .left{
+        width: auto;
+        justify-content: space-between;
+    }
+    .top-navbar .left .top-nav-link{
+        margin-right: 10px;
+    }
+    .top-navbar .right{
+        width: auto;
+        justify-content: space-between;
+    }
+    .top-navbar .right .sosial-icons{
+        margin-right: 0;
+    }
+    .top-navbar .right .icon-link{
+        padding: 5px 10px;
+    }
+}
