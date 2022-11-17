@@ -379,3 +379,88 @@ header{width: 100%; position: relative;}
     margin-right: 10px;
 }
 .icon-link.login span{color: var(--black-8);}
+
+
+
+.bottom-navbar{
+    background-color: #fff;
+    width: 100%;
+}
+.bottom-navbar .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.bottom-navbar-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-nav-link{
+    color: var(--black-8);
+    font-size: var(--fs-2);
+    padding: 10px;
+    font-weight: 700;
+}
+.bottom-nav-link:hover{
+    background-color: var(--color-1);
+    color: #fff;
+    animation: pulse-red 1s ease infinite;
+}
+
+.usta-logo img{
+    width: 150px;
+    object-fit: contain;
+    animation: usta-logo-animation 3s linear infinite;
+}
+@-webkit-keyframes usta-logo-animation{
+    0%{transform: rotate(0);}
+    25%{transform: rotate(8deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(-8deg);}
+    100%{transform: rotate(0);}
+}
+@keyframes usta-logo-animation{
+    0%{transform: rotate(0);}
+    25%{transform: rotate(8deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(-8deg);}
+    100%{transform: rotate(0);}
+}
+.alt-category-panel-button{
+    align-self: stretch;
+
+}
+.alt-category-panel{
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin-top: -10px;
+    animation: alt-category-panel 0.5s ease forwards;
+}
+@keyframes alt-category-panel{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alt-category-panel-menu{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

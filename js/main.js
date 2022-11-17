@@ -30,3 +30,30 @@ for(let i = 0;i < topNavDropdowns.length;i++){
         });
     })(i);
 }
+
+let altCategoryPanelButtons = document.querySelectorAll(".alt-category-panel-button");
+let altCategoryPanelButtonLinks = document.querySelectorAll(".alt-category-panel-button .bottom-nav-link");
+let altCategoryPanel = document.querySelector(".alt-category-panel");
+let altCategoryPanelMenu = document.querySelectorAll(".alt-category-panel-menu")
+
+for(let i = 0; i < altCategoryPanelButtons.length; i++){
+    (function(index){
+        altCategoryPanelButtons[index].addEventListener("mouseover",function(){
+            altCategoryPanel.classList.remove("d-none");
+            for(let i = 0; i < altCategoryPanelMenu.length; i++){
+                altCategoryPanelMenu[i].classList.add("d-none")
+            }
+            altCategoryPanelMenu[index].classList.remove("d-none");
+        });
+        altCategoryPanelButtons[index].addEventListener("mouseout",function(){
+            altCategoryPanel.classList.add("d-none");
+        });
+        altCategoryPanel.addEventListener("mouseover",function(){
+            altCategoryPanel.classList.remove("d-none");
+        });
+        altCategoryPanel.addEventListener("mouseout",function(){
+            altCategoryPanel.classList.add("d-none");
+        });
+
+    })(i);
+}
