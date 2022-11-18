@@ -1,17 +1,52 @@
-let categoryButtons = document.querySelectorAll(".category-button");
-let rightChevrons = document.querySelectorAll(".fa-chevron-right");
+let mobileHeader = document.querySelector(".mobile-header");
+let generalBottomNavbar = document.querySelector(".general-header .bottom-navbar");
+let pageUpScrollBtn = document.querySelector(".page-up-scroll-btn");
 
-for(let i = 0; i< categoryButtons.length;i++){
+let bottomNavUstaLogo = document.querySelector(".bottom-navbar .usta-logo");
+let fixHeaderIcons = document.querySelector(".bottom-navbar .fix-header-icons");
+
+window.addEventListener("scroll",function(){
+    if(scrollY > 200){
+        mobileHeader.classList.add("header-transform","fixed-top");
+    }else{
+        mobileHeader.classList.remove("header-transform","fixed-top");
+    }
+    if(scrollY > 250){
+        generalBottomNavbar.classList.add("header-transform","fixed-top");
+        bottomNavUstaLogo.classList.add("d-none");
+        fixHeaderIcons.classList.remove("d-none")
+    }else{
+        generalBottomNavbar.classList.remove("header-transform","fixed-top");
+        bottomNavUstaLogo.classList.remove("d-none");
+        fixHeaderIcons.classList.add("d-none")
+    }
+    if(scrollY > 400){
+        pageUpScrollBtn.classList.remove("d-none");
+    }else{
+        pageUpScrollBtn.classList.add("d-none");
+    }
+});
+
+//scroll button function
+pageUpScrollBtn.onclick = function(){
+    window.scrollTo(0,0);
+}
+
+
+let collapseButton = document.querySelectorAll(".collapse-button");
+let rightChevron = document.querySelectorAll(".collapse-button .fa-chevron-right");
+
+for(let i = 0; i< collapseButton.length;i++){
     (function(index){
-        categoryButtons[i].addEventListener("click",function(){
-            if(categoryButtons[index].classList.contains("status-open")==false){
-                categoryButtons[index].classList.add("status-open");
-                rightChevrons[index].classList.remove("rotate-right");
-                rightChevrons[index].classList.add("rotate-down");
+        collapseButton[i].addEventListener("click",function(){
+            if(collapseButton[index].classList.contains("status-open")==false){
+                collapseButton[index].classList.add("status-open");
+                rightChevron[index].classList.remove("rotate-right");
+                rightChevron[index].classList.add("rotate-down");
             }else{
-                categoryButtons[index].classList.remove("status-open");
-                rightChevrons[index].classList.remove("rotate-down");
-                rightChevrons[index].classList.add("rotate-right");
+                collapseButton[index].classList.remove("status-open");
+                rightChevron[index].classList.remove("rotate-down");
+                rightChevron[index].classList.add("rotate-right");
             }
         })
     })(i);

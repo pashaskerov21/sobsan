@@ -1,34 +1,21 @@
 @media only screen and (min-width:360px){
     .mobile-header{padding: 25px 10px;}
-    .mobile-header .mh-link{padding: 5px 15px;}
+    .header-icons .icon-link{padding: 5px 10px;}
 }
-/* @media only screen and (min-width:540px){}
-@media only screen and (min-width:768px){}
-@media only screen and (min-width:992px){}
-*/
+@media only screen and (min-width:540px){
+    .header-icons .icon-link{padding: 5px 15px;}
+}
+
 @media only screen and (min-width:1200px){
-    .top-navbar{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .top-navbar .left{
-        width: auto;
-        justify-content: space-between;
-    }
-    .top-navbar .left .top-nav-link{
-        margin-right: 10px;
-    }
-    .top-navbar .right{
-        width: auto;
-        justify-content: space-between;
-    }
-    .top-navbar .right .sosial-icons{
-        margin-right: 0;
-    }
-    .top-navbar .right .icon-link{
-        padding: 5px 10px;
-    }
+    .top-navbar{flex-direction: row;justify-content: space-between;}
+    .top-navbar .left{width: auto;justify-content: space-between;}
+    .top-navbar .left .top-nav-link{margin-right: 10px;}
+    .top-navbar .right{width: auto;justify-content: space-between;}
+    .top-navbar .right .sosial-icons{margin-right: 0;}
+    .top-navbar .right .icon-link{padding: 5px 10px;}
     .bottom-nav-link{font-size: 16px;}
+    .alt-category-links .header-link{font-size: 16px;}
+    .alt-category-links .alt-link{font-size: 16px;}
 }
 @media only screen and (min-width:1400px){
     .bottom-nav-link{font-size: 18px;}
