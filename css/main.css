@@ -43,6 +43,12 @@
     0%{transform: translateY(-500px);}
     100%{transform: translateY(0);}
 }
+@-webkit-keyframes spin-line{
+    100%{transform: rotate(360deg);}
+}
+@keyframes spin-line{
+    100%{transform: rotate(360deg);}
+}
 @-webkit-keyframes rotate-down{
     0%{transform: rotate(0);}
     100%{transform: rotate(90deg);}
@@ -132,23 +138,6 @@ a, button, div, span, p, img, i{
     box-shadow: 0 0 5px var(--black-8);
     z-index: 9;
 }
-.page-up-scroll-btn{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 30px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-1);
-    color: #fff;
-    box-shadow: 0 0 10px #fff;
-    border-radius: 5px;
-    font-size: 20px;
-    z-index: 99;
-}
 main{width: 100%;}
 section{width: 100%;}
 .hover-absolute-div{
@@ -185,6 +174,159 @@ section{width: 100%;}
 /*CHEVRON ANIMATION CLASS*/
 .rotate-down{animation: rotate-down 0.3s ease forwards;}
 .rotate-right{animation: rotate-up 0.3s ease forwards;}
+
+/*----------PAGE TOOLBAR CENTER--------*/
+.page-toolbar-center{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(120px,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.general-qaynar-xett{
+    background-color: var(--color-1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    animation: pulse-red 1s ease infinite;
+    margin-bottom: 30px;
+    transform: translateX(-120px);
+    z-index: 9999;
+}
+.general-qaynar-xett i{
+    padding: 10px 0;
+    padding-right: 10px;
+    color: #fff;
+    font-size: var(--fs-4);
+}
+.general-qaynar-xett span{
+    text-align: center;
+    font-size: var(--fs-2);
+    font-weight: 700;
+    color: #fff;
+}
+
+.toolbar-card{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 5px var(--black-3);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 999;
+}
+.toolbar-card .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+}
+.toolbar-card .icon img{
+    transform: rotateY(180deg);
+}
+.toolbar-card .icon .card-badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+    color: #fff;
+    font-size: var(--fs-2);
+    font-weight: 500;
+}
+.toolbar-card a{
+    color: #000;
+}
+.toolbar-card:hover{
+    transform: translateX(-120px);
+}
+
+/*---------PAGE-TOOLBAR BOTTOM--------*/
+.page-toolbar-bottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-up-scroll-btn{
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+    color: #fff;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 999;
+}
+.mobile-qaynar-xett{
+    margin: 10px 0;
+    z-index: 999;
+}
+.mobile-qaynar-xett span{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    color: #fff;
+    font-size: var(--fs-2);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mobile-qaynar-xett span::before,
+.mobile-qaynar-xett span::after{
+    border: 1px solid;
+    border-color: var(--color-1) transparent;
+}
+.mobile-qaynar-xett span::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    border-radius: 50%;
+    animation: spin-line 4s linear infinite;
+}
+.mobile-qaynar-xett span::after{
+    content: "";
+    position: absolute;
+    top: -16px;
+    bottom: -16px;
+    left: -16px;
+    right: -16px;
+    border-radius: 50%;
+    animation: spin-line 5s linear infinite;
+}
+
 
 /*---------HEADER-----------*/
 header{width: 100%; position: relative;}
@@ -464,5 +606,5 @@ main{
 .large-div{
     width: 50%;
     height: 500px;
-    background-color: #ED3237;
+    background-color: gray;
 }
