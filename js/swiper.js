@@ -37,3 +37,56 @@ const swiper3 = new Swiper(".popular-products-swiper", {
       },
   });
 
+const swiper5 = new Swiper(".news-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 10},
+      992: {slidesPerView: 3,spaceBetween: 10},
+      },
+  });
+
+const swiper6 = new Swiper(".video-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 10},
+      992: {slidesPerView: 3,spaceBetween: 10},
+      1400: {slidesPerView: 4,spaceBetween: 10},
+      
+      },
+  });
+
+const swiper7 = new Swiper(".partners-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 10},
+      992: {slidesPerView: 3,spaceBetween: 10},
+      },
+  });
+

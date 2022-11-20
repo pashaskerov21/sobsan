@@ -85,3 +85,5 @@ for(let i = 0; i < favoriteButton.length; i++){
         })
     })(i);
 };
+
+

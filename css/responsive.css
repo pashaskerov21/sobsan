@@ -13,7 +13,9 @@
     section .container .section-title{font-size: 28px;}
     .swiper-section-2 .swiper-bottom-contact{flex-direction: row; justify-content: space-around;}
 
-    .product-card .footer{width: 85%;}
+    .product-card .footer{width: 95%;}
+
+    .general-wrapper-right .filters-wrapper .left-filters{flex-direction: row;}
 }
 @media only screen and (min-width:992px){
     .swiper-bottom-contact .contact-links{flex-direction: row;}
