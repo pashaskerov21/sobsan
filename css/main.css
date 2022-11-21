@@ -1112,6 +1112,9 @@ footer .container{
     color: #fff !important;
     transition: 0s;
 }
+.product-button.compare.active span{
+    color: #fff !important;
+}
 
 /*------ROOM DESİGN SECTİON------*/
 .room-design-section{
