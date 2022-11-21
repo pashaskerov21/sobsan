@@ -1,3 +1,17 @@
+let catalogButtons = document.querySelectorAll(".catalog-buttons button");
+for(let i = 0; i < catalogButtons.length; i++){
+    (function(index){
+        catalogButtons[i].addEventListener("click",function(){
+            for(let i = 0; i < catalogButtons.length; i++){
+                catalogButtons[i].classList.remove("active");
+            }
+            catalogButtons[index].classList.add("active");
+
+        })
+    })(i);
+}
+
+
 let colorButton = document.querySelectorAll(".color-button");
 let shadesWrapper = document.querySelectorAll(".shades-wrapper");
 for(let i = 0; i < colorButton.length;i++){

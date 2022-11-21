@@ -1796,7 +1796,7 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     width: 100%;
 }
 .accordion-button{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
 }
 .accordion-button:not(.collapsed) {
