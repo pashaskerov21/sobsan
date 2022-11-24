@@ -2406,3 +2406,104 @@ textarea.form-control{
     background-color: #4BB543;
     animation: pulse-green 1s ease infinite;
 }
+
+.location-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.location-wrapper .header{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.location-wrapper table td{
+    padding: 5px 0;
+    text-align: start;
+    padding-right: 10px;
+}
+.location-wrapper table td:first-child{font-weight: 700;}
+.location-wrapper table td a{color: #000;}
+.location-wrapper table td a:hover{color: var(--color-1);}
+.map-div{
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid var(--black-1);
+}
+
+.career-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.career-buttons button{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--black-1);
+    font-weight: 700;
+}
+.career-buttons button.active{
+    background: url("../image/large-drop-bg.png") var(--color-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff !important;
+    border-color: var(--color-1) !important;
+}
+
+.career-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.active-vacancy-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vacancy-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border: 1px solid var(--black-3);
+}
+.vacancy-card .header{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--black-2);
+}
+.vacancy-card .text{
+    padding: 10px 0;
+}
+
+.vacancy-button{
+    width: 100%;
+    min-width: 150px;
+    max-width: 250px;
+    border: 1px solid var(--color-1);
+    padding: 15px 0;
+    color: var(--color-1);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.vacancy-button i{
+    padding: 0 5px;
+}
+.vacancy-button:hover{
+    background-color: var(--color-1);
+    color: #fff;
+    animation: pulse-red 1s ease infinite;
+}

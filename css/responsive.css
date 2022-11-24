@@ -44,6 +44,13 @@
     }
     .contact-section form span{text-align: start;}
     form .form-button{align-self: flex-start;}
+
+    .location-wrapper{
+        align-items: flex-start;
+        border-right: 1px dashed rgba(0,0,0,0.3);
+    }
+
+    .career-buttons{flex-direction: row;}
 }
 @media only screen and (min-width:992px){
     .swiper-bottom-contact .contact-links{flex-direction: row;}
