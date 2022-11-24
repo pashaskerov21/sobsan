@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobsan | Məhsul müqayisəsi</title>
+    <title>Sobsan | Səbət</title>
     <link rel="icon" href="image/logo/head-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -487,162 +487,211 @@
         </div>
     </header>
 
-    <main class="sobsan-products-compare">
+    <main class="sobsan-actions">
         <div class="page-heading container">
             <div class="root-links">
                 <a href="#">Əsas səhifə</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="#">Məhsul Müqayisəsi</a>
+                <a href="#">Səbət</a>
             </div>
             <div class="alt-wrapper">
-                <h1>Məhsul Müqayisəsi</h1>
+                <h1>Səbət</h1>
                 <button class="remove-all-button"><img src="image/icons/icons-delete.svg"> Təmizlə</button>
             </div>
-        </div>    
-        <section class="products-compare-section">
+        </div>  
+        <section class="products-basket-section">
             <div class="container">
-                <div class="compare-table">
-                    <div class="lists-wrapper parameters">
-                        <ul class="parameter-list soft">
-                            <li></li>
-                            <li>Brend:</li>
-                            <li>Məhsulun adı:</li>
-                            <li>Kateqoriya:</li>
-                            <li>Məhsulun kodu:</li>
-                            <li>Qiymət:</li>
-                            <li></li>
-                        </ul>
-                        <ul class="parameter-list tech">
-                            <li>Texniki parametrlər</li>
-                            <li>Saxlanma müddəti:</li>
-                            <li>Toxunma quruması:</li>
-                            <li>Sərt quruma:</li>
-                            <li>Sərfiyyat:</li>
-                        </ul>
+                <div class="basket-table-wrapper">
+                    <table class="basket-table">
+                        <tr>
+                            <th>Foto</th>
+                            <th>Məhsulun adı & Brend</th>
+                            <th>Rəng</th>
+                            <th>Çəki</th>
+                            <th>Qiymət</th>
+                            <th>Miqdar & Anbarda</th>
+                            <th>Cəmi</th>
+                            <th>Sil</th>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/1-main/products/img-1.jpg" >
+                                </div>
+                            </td>
+                            <td class="name-brand-cell">
+                                <div class="name-brand">
+                                    <span class="brand">Sobsan</span>
+                                    <span class="name">Exsclusive</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="color">Ana rəng</span>
+                            </td>
+                            <td>
+                                <span class="weight">3 kq</span>
+                            </td>
+                            <td>
+                                <span class="product-price">10.00 AZN</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="amout-wrapper">
+                                    <div  class="anbar-value">
+                                        <span class="icon">&#10003;</span>
+                                        <span>Anbarda: 0 ədəd</span>
+                                    </div>
+                                    <div class="cp-counter">
+                                        <button class="decrement-button">-</button>
+                                        <span class="cp-number">1</span>
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>
+                                <span class="product-total-price"></span>
+                            </td>
+                            <td>
+                                <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/1-main/products/img-2.jpg" >
+                                </div>
+                            </td>
+                            <td class="name-brand-cell">
+                                <div class="name-brand">
+                                    <span class="brand">Sobsan</span>
+                                    <span class="name">Exsclusive</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="color">Ana rəng</span>
+                            </td>
+                            <td>
+                                <span class="weight">3 kq</span>
+                            </td>
+                            <td>
+                                <span class="product-price">20.00 AZN</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="amout-wrapper">
+                                    <div  class="anbar-value">
+                                        <span class="icon">&#10003;</span>
+                                        <span>Anbarda: 0 ədəd</span>
+                                    </div>
+                                    <div class="cp-counter">
+                                        <button class="decrement-button">-</button>
+                                        <span class="cp-number">1</span>
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>
+                                <span class="product-total-price"></span>
+                            </td>
+                            <td>
+                                <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/1-main/products/img-3.jpg" >
+                                </div>
+                            </td>
+                            <td class="name-brand-cell">
+                                <div class="name-brand">
+                                    <span class="brand">Sobsan</span>
+                                    <span class="name">Exsclusive</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="color">Ana rəng</span>
+                            </td>
+                            <td>
+                                <span class="weight">3 kq</span>
+                            </td>
+                            <td>
+                                <span class="product-price">30.00 AZN</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="amout-wrapper">
+                                    <div  class="anbar-value">
+                                        <span class="icon">&#10003;</span>
+                                        <span>Anbarda: 0 ədəd</span>
+                                    </div>
+                                    <div class="cp-counter">
+                                        <button class="decrement-button">-</button>
+                                        <span class="cp-number">1</span>
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>
+                                <span class="product-total-price"></span>
+                            </td>
+                            <td>
+                                <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/1-main/products/img-4.jpg" >
+                                </div>
+                            </td>
+                            <td class="name-brand-cell">
+                                <div class="name-brand">
+                                    <span class="brand">Sobsan</span>
+                                    <span class="name">Exsclusive</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="color">Ana rəng</span>
+                            </td>
+                            <td>
+                                <span class="weight">3 kq</span>
+                            </td>
+                            <td>
+                                <span class="product-price">40.00 AZN</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="amout-wrapper">
+                                    <div  class="anbar-value">
+                                        <span class="icon">&#10003;</span>
+                                        <span>Anbarda: 0 ədəd</span>
+                                    </div>
+                                    <div class="cp-counter">
+                                        <button class="decrement-button">-</button>
+                                        <span class="cp-number">1</span>
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>
+                                <span class="product-total-price"></span>
+                            </td>
+                            <td>
+                                <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="basket-bottom-wrapper">
+                    <div class="total-sum-wrapper">
+                        <span class="label">Ümumi Məbləğ:</span>
+                        <span class="total-sum"></span>
                     </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-1.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
-                                    </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
-                    </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-2.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
-                                    </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
-                    </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-3.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
-                                    </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
-                    </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-4.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
-                                    </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
-                    </div>
+                    <button class="confirm-basket">Təsdiqlə</button>
                 </div>
             </div>
-        </section>
+        </section>  
     </main>
 
 
@@ -758,7 +807,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/compare.js"></script>
+    <script src="js/basket.js"></script>
     
 </body>
 </html>

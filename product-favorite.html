@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobsan | Məhsul müqayisəsi</title>
+    <title>Sobsan | Seçilmişlər</title>
     <link rel="icon" href="image/logo/head-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -487,162 +487,376 @@
         </div>
     </header>
 
-    <main class="sobsan-products-compare">
+    <main class="sobsan-products-favorite">
         <div class="page-heading container">
             <div class="root-links">
                 <a href="#">Əsas səhifə</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="#">Məhsul Müqayisəsi</a>
+                <a href="#">Seçilmişlər</a>
             </div>
             <div class="alt-wrapper">
-                <h1>Məhsul Müqayisəsi</h1>
+                <h1>Seçilmişlər</h1>
                 <button class="remove-all-button"><img src="image/icons/icons-delete.svg"> Təmizlə</button>
             </div>
-        </div>    
-        <section class="products-compare-section">
+        </div> 
+        <section class="favorite-section">
             <div class="container">
-                <div class="compare-table">
-                    <div class="lists-wrapper parameters">
-                        <ul class="parameter-list soft">
-                            <li></li>
-                            <li>Brend:</li>
-                            <li>Məhsulun adı:</li>
-                            <li>Kateqoriya:</li>
-                            <li>Məhsulun kodu:</li>
-                            <li>Qiymət:</li>
-                            <li></li>
-                        </ul>
-                        <ul class="parameter-list tech">
-                            <li>Texniki parametrlər</li>
-                            <li>Saxlanma müddəti:</li>
-                            <li>Toxunma quruması:</li>
-                            <li>Sərt quruma:</li>
-                            <li>Sərfiyyat:</li>
-                        </ul>
-                    </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-1.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
+                <div class="row w-100">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-1.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
                                     </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
-                    </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-2.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
                                     </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-3.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-2.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
                                     </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lists-wrapper product">
-                        <ul class="product-list soft">
-                            <li class="image ">
-                                <img src="image/1-main/products/img-4.jpg">
-                            </li>
-                            <li>Sobsan</li>
-                                <li>Sədəf boya</li>
-                                <li>Məhsullar</li>
-                                <li>#345204</li>
-                                <li class="price">0.00 AZN</li>
-                                <li>
-                                    <button class="product-button basket">
-                                        <div class="enabled d-none">
-                                            <img src="image/icons/icons-cart-white.svg">
-                                        </div>
-                                        <div class="disabled">
-                                            <span>Səbətə at</span>
-                                        </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-3.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
                                     </button>
-                                </li>
-                        </ul>
-                        <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                        <ul class="product-list tech">
-                            <li></li>
-                            <li>3 il</li>
-                            <li>1-2 saat</li>
-                            <li>24 saat</li>
-                            <li>6-8 m²/kg (tək qat)</li>
-                        </ul>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-4.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
+                                    </button>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-5.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
+                                    </button>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-6.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
+                                    </button>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-7.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
+                                    </button>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-center p-0">
+                        <div class="product-card">
+                            <div class="header">
+                                <span class="badge">TƏKLİF OLUNAN</span>
+                                <img class="product-image" src="image/1-main/products/img-8.jpg">
+                            </div>
+                            <div class="body-item">
+                                <span class="brand">Sobsan</span>
+                                <span class="name">EXSCLUSİVE</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="description">Silikonlu, silinə bilən daxili cəbhə boyası</span>
+                            </div>
+                            <div class="body-item">
+                                <span class="price">10.00 AZN</span>
+                                <div  class="anbar-value">
+                                    <span class="icon">&#10003;</span>
+                                    <span>Anbarda: 0 ədəd</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="product-button basket">
+                                    <div class="enabled d-none">
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                    <div class="disabled">
+                                        <span>Səbətə at</span>
+                                        <img src="image/icons/icons-cart-white.svg">
+                                    </div>
+                                </button>
+                                <div class="bottom">
+                                    <button class="product-button compare">
+                                        <img class="compare-white d-none" src="image/icons/icons-compare-white.svg">
+                                        <img class="compare-red" src="image/icons/icons-compare.svg">
+                                        <span>Müqayisə</span>
+                                    </button>
+                                    <button class="product-button favorite">
+                                        <img class="favorite-full" src="image/icons/icons-favourite-full.svg">
+                                        <img class="favorite-white d-none" src="image/icons/icons-favourite.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>   
     </main>
 
 
@@ -758,7 +972,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/compare.js"></script>
+    <script src="js/favorite.js"></script>
     
 </body>
 </html>
