@@ -500,25 +500,19 @@
             <div class="container">
                 <div class="row w-100">
                     <div class="col-12 col-lg-6 contact-col">
-                        <form action="#" autocomplete="off">
+                        <form action="#" autocomplete="off" class="form-general">
                             <span>Bütün sual və müraciətlərinizi rahatlıqla bizə ünvanlaya bilərsiniz. Ən qısa zamanda və böyük məmnuniyyətlə cavablandıracağıq.</span>
-                            <div class="form-item">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="user-name" placeholder="ad soyad">
-                                    <label for="user-name">Ad, soyad *</label>
-                                </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="user-name" placeholder="ad soyad">
+                                <label for="user-name">Ad, soyad *</label>
                             </div>
-                            <div class="form-item">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="user-email" placeholder="email">
-                                    <label for="user-email">E-poçt *</label>
-                                </div>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="user-email" placeholder="email">
+                                <label for="user-email">E-poçt *</label>
                             </div>
-                            <div class="form-item textarea">
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="user-message" placeholder="mesaj"></textarea>
-                                    <label for="user-message">Mesajınız *</label>
-                                </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="user-message" placeholder="mesaj"></textarea>
+                                <label for="user-message">Mesajınız *</label>
                             </div>
                             <button type="submit" class="form-button red">Göndər</button>
                         </form>
@@ -663,19 +657,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        let formControl = document.querySelectorAll(".form-control");
-        let formItem = document.querySelectorAll(".form-item");
-        for(let i = 0; i < formControl.length; i++){
-            (function(index){
-                formControl[i].addEventListener("focus",function(){
-                    formItem[index].classList.add("red-border")
-                });
-                formControl[i].addEventListener("blur",function(){
-                    formItem[index].classList.remove("red-border")
-                });
-            })(i);
-        }
-    </script>
 </body>
 </html>

@@ -500,62 +500,48 @@
             <div class="container">
                 <div class="row w-100">
                     <div class="col-12 col-lg-8 col-center">
-                        <form action="#" autocomplete="off">
+                        <form action="#" autocomplete="off" class="form-general">
                             <div class="row w-100">
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="user-firstname" placeholder="ad">
-                                            <label for="user-firstname">Ad *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="user-firstname" placeholder="ad">
+                                        <label for="user-firstname">Ad *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="user-lastname" placeholder="soyad">
-                                            <label for="user-lastname">Soyad *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="user-lastname" placeholder="soyad">
+                                        <label for="user-lastname">Soyad *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="user-phone" placeholder="nomre">
-                                            <label for="user-phone">Nömrə *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="user-phone" placeholder="nomre">
+                                        <label for="user-phone">Nömrə *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="user-address" placeholder="unvan">
-                                            <label for="user-address">Ünvan *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="user-address" placeholder="unvan">
+                                        <label for="user-address">Ünvan *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="user-email" placeholder="email">
-                                            <label for="user-email">E-poçt *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="user-email" placeholder="email">
+                                        <label for="user-email">E-poçt *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="password" class="form-control" id="user-password-1" placeholder="sifre">
-                                            <label for="user-password-1">Şifrə *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="user-password-1" placeholder="sifre">
+                                        <label for="user-password-1">Şifrə *</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-center">
-                                    <div class="form-item">
-                                        <div class="form-floating">
-                                            <input type="password" class="form-control" id="user-password-2" placeholder="sifre">
-                                            <label for="user-password-2">Şifrənizi təsdiq edin *</label>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="user-password-2" placeholder="sifre">
+                                        <label for="user-password-2">Şifrənizi təsdiq edin *</label>
                                     </div>
                                 </div>
                             </div>
@@ -693,19 +679,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        let formControl = document.querySelectorAll(".form-control");
-        let formItem = document.querySelectorAll(".form-item");
-        for(let i = 0; i < formControl.length; i++){
-            (function(index){
-                formControl[i].addEventListener("focus",function(){
-                    formItem[index].classList.add("red-border")
-                });
-                formControl[i].addEventListener("blur",function(){
-                    formItem[index].classList.remove("red-border")
-                });
-            })(i);
-        }
-    </script>
 </body>
 </html>

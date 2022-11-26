@@ -415,6 +415,10 @@ section .container .section-title{
 .toolbar-card a{
     color: #000;
 }
+.toolbar-card .icon i{
+    color: var(--color-1);
+    font-size: 22px;
+}
 .toolbar-card:hover{
     transform: translateX(-120px);
 }
@@ -2019,59 +2023,67 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     justify-content: center;
     align-items: center; 
 }
-form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--black-1);
-    padding: 15px;
-}
 .form-col{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.form-general{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.form-general .form-floating {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.form-general .form-control, .form-general .form-select {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    resize: none;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    height: 55px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.form-general textarea.form-control {
+    min-height: 150px;
+    border: 1px solid #cdcdcd;
+}
+.form-general .form-control:focus, .form-general .form-select:focus {
+    box-shadow: none;
+    border-color: rgba(216, 35, 42, 0.5);
+}
+
 .contact-section form span{
     width: 100%;
     text-align: center;
     padding: 15px 0;
     font-size: 14px;
 }
-.form-control, .form-select{
+.input-file{
     width: 100%;
-    border: none;
-    box-shadow: none;
+    border-bottom: 1px solid #cdcdcd;
+    height: 55px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
 }
-.form-control:focus, .form-select:focus{
-    border: none;
-    box-shadow: none;
-}
-.form-item{
-    width: 100%;
-    min-height: 55px;
-    border-bottom: 1px solid var(--black-3);
-    margin-bottom: 30px;
-}
-textarea.form-control{
-    resize: none;
-    min-height: 140px;
-}
-.textarea{
-    border: 1px solid var(--black-3);
-    width: 100%;
-    height: 100%;
-}
-.form-item.file input{
+.input-file input{
     display: none;
 }
-.form-item.file label{
+.input-file label{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     cursor: pointer;
 }
 .red-border{border-color: var(--color-1);}
@@ -2091,6 +2103,16 @@ textarea.form-control{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
+}
+.form-button.master{
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+    background-color: #fff;
+}
+.form-button.master:hover{
+    background-color: var(--color-1) !important;
+    color: #fff !important;
+    animation: pulse-red 1s ease infinite;
 }
 .form-button.red:hover{
     animation: pulse-red 1s ease infinite;
@@ -2554,3 +2576,57 @@ textarea.form-control{
 .vacancy-info ul li{
     list-style: "- ";
 }
+
+
+/*-----MASTERS UNİON---------*/
+.masters-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.masters-buttons button{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--black-1);
+    font-weight: 700;
+}
+.masters-buttons button.active{
+    background-color: var(--color-1);
+    color: #fff !important;
+    border-color: var(--color-1) !important;
+}
+
+
+.masters-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    position: relative;
+}
+.form-item label{
+    padding-bottom: 5px;
+}
+.phone-code{
+    border: 1px solid #d9d5d5;
+    padding: 0;
+    width: 61px;
+    background: #e9ecef;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.password-visible{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
