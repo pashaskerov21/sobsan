@@ -2039,17 +2039,18 @@ form{
     padding: 15px 0;
     font-size: 14px;
 }
-.form-control{
+.form-control, .form-select{
     width: 100%;
     border: none;
     box-shadow: none;
 }
-.form-control:focus{
+.form-control:focus, .form-select:focus{
     border: none;
     box-shadow: none;
 }
 .form-item{
     width: 100%;
+    min-height: 55px;
     border-bottom: 1px solid var(--black-3);
     margin-bottom: 30px;
 }
@@ -2506,4 +2507,53 @@ textarea.form-control{
     background-color: var(--color-1);
     color: #fff;
     animation: pulse-red 1s ease infinite;
+}
+
+
+.form-item.file input{
+    display: none;
+}
+.form-item.file label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.alt-wrapper.date{
+    display: flex;
+    flex-direction: column;
+}
+.badges-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.date-badge{
+    background-color: var(--color-1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.date-badge span{
+    font-weight: 700;
+}
+.vacancy-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.vacancy-info span{
+    font-weight: 700;
+    padding: 10px 0;
+}
+.vacancy-info ul li{
+    list-style: "- ";
 }
