@@ -1813,6 +1813,9 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     height: 300px;
     object-fit: cover;
 }
+.gallery-item:hover{
+    transform: scale(0.9);
+}
 
 /*--------SOBSAN CATALOGS-------*/
 
@@ -2032,6 +2035,7 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 25px;
 }
 .form-general .form-floating {
@@ -2094,6 +2098,9 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     margin: 20px 0;
     font-size: 18px;
     font-weight: 500;
+}
+.form-general .form-button{
+    align-self: flex-start;
 }
 .form-button.red{
     color: #fff;
@@ -2474,6 +2481,7 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 .career-buttons button{
     width: 100%;
@@ -2629,4 +2637,109 @@ input[type="range"]::-webkit-slider-thumb:active{box-shadow: 0 0 5px 2px #ED3237
     bottom: 20px;
     right: 10px;
 }
+.masters-union-wrapper .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.master-main-swiper{
+    width: 100%;
+}
+.masters-main-swiper .swiper-slide img{
+    width: 100%;
+    object-fit: contain;
+}
 
+.masters-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.masters-info-text span{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.masters-info-text p{
+    width: 100%;
+}
+
+.masters-categories-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.masters-categories-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--black-3);
+}
+
+.masters-categories-buttons button{
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid var(--black-3);
+    font-weight: 700;
+}
+.masters-categories-buttons button:last-child{
+    border: none;
+}
+.masters-categories-buttons button.active{
+    background: url("../image/large-drop-bg.png") var(--color-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff !important;
+    border-color: var(--color-1) !important;
+}
+
+.masters-category{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.masters-category-swiper,
+.masters-gallery-swiper-1,
+.masters-gallery-swiper-2{
+    width: 100%;
+}
+.masters-gallery-swiper-1{
+    margin-bottom: 30px;
+}
+.masters-category-swiper .slide-card{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.masters-category-swiper .slide-card .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masters-category-swiper .slide-card .image img{
+    width: 100%;
+    height: 300px;
+}
+.masters-category-swiper .slide-card .header{
+    font-size: 17px;
+    padding: 10px 0;
+    color: #000;
+}
+.masters-category-swiper .slide-card:hover{
+    transform: scale(0.9);
+}

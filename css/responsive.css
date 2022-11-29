@@ -100,6 +100,14 @@
 }
 @media only screen and (min-width:992px){
     .swiper-bottom-contact .contact-links{flex-direction: row;}
+
+    .masters-categories-buttons{
+        flex-direction: row;
+    }
+    .masters-categories-buttons button{
+        border-bottom: none;
+        border-right: 1px solid rgba(0,0,0,0.3)
+    }
 }
 @media only screen and (min-width:1200px){
     .top-navbar{flex-direction: row;justify-content: space-between;}
